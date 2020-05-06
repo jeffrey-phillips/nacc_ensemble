@@ -1,0 +1,780 @@
+Variable,Keep,KeepAgain,Type,Nvalues,NaNValues,Comments
+NACCID,True,True,Nominal,,,
+NACCADC,False,False,,,,Useful as covariate? Replaces ADCID
+PACKET,False,False,,,,Tells if initial visit packet or not
+FORMVER,False,False,,,,
+VISITMO,False,False,,,,
+VISITDAY,False,False,,,,
+VISITYR,False,False,,,,
+NACCVNUM,False,False,,,,VISITNUM
+NACCAVST,False,False,,,,
+NACCNVST,False,False,,,,
+NACCDAYS,False,False,,,,
+NACCFDYS,False,False,,,,
+NACCCORE,False,False,,,,
+NACCREAS,True,True,,,,reason for coming to ADC
+NACCREFR,True,False,,,,referral source
+BIRTHMO,False,False,,,,Compose into approximate DOB
+BIRTHYR,False,False,,,,Compose into approximate DOB
+SEX,True,True,Nominal,2,,
+HISPANIC,True,True,Boolean,2,(9),
+HISPOR,False,False,,,,Detailed regional origin--dummy variables
+HISPORX,False,False,,,,Other options for HISPOR--combine--dummy variables
+RACE,True,True,Nominal,6,(99),dummy variables
+RACEX,False,False,,,,Other race--combine with RACE--dummy variables
+RACESEC,False,False,,,,--dummy variables
+RACESECX,False,False,,,,Other secondary race--combine with RACESECX--dummy variables
+RACETER,False,False,,,,--dummy variables
+RACETERX,False,False,,,,Other tertiary race--combine with RACETERX--dummy variables
+PRIMLANG,True,True,Nominal,7,(9),
+PRIMLANX,False,False,,,,
+EDUC,True,True,Numeric,,(99),
+MARISTAT,True,True,,,,
+NACCLIVS,True,True,,,,
+INDEPEND,False,False,,,,
+RESIDENC,True,True,,,,
+HANDED,True,True,Nominal,3,(9),
+INBIRMO,False,False,,,,
+INBIRYR,False,False,,,,
+INSEX,False,False,,,,
+NEWINF,False,False,,,,
+INHISP,False,False,,,,
+INHISPOR,False,False,,,,
+INHISPOX,False,False,,,,
+NACCNINR,False,False,,,,
+INRACE,False,False,,,,
+INRACEX,False,False,,,,
+INRASEC,False,False,,,,
+INRASECX,False,False,,,,
+INRATER,False,False,,,,
+INRATERX,False,False,,,,
+INEDUC,False,False,,,,
+INRELTO,False,False,,,,
+INRELTOX,False,False,,,,
+INKNOWN,False,False,,,,
+INLIVWTH,False,False,,,,
+INVISITS,False,False,,,,
+INCALLS,False,False,,,,
+INRELY,False,False,,,,
+NACCFAM,True,True,Nominal,2,"(9,-4)",
+NACCMOM,True,True,Boolean,2,"(9,-4)",
+NACCDAD,True,True,Boolean,2,"(9,-4)",
+NACCAM,True,True,Nominal,5,"(9,-4)",
+NACCAMX,False,False,,,,unhelpful
+NACCAMS,False,False,,,,Include? Source of mutation info
+NACCAMSX,False,False,,,,Include? Source of mutation info (other)
+NACCFM,True,True,Nominal,6,"(9,-4)",
+NACCFMX,False,False,,,,Uninformative
+NACCFMS,False,False,,,,
+NACCFMSX,False,False,,,,
+NACCOM,True,True,Boolean,2,"(9,-4)",Other mutation (boolean)
+NACCOMX,False,False,,,,Exclude
+NACCOMS,False,False,,,,
+NACCOMSX,False,False,,,,
+NACCFADM,False,False,Boolean,2,,redundant with NACCAM
+NACCFFTD,True,True,Boolean,2,,
+ANYMEDS,False,False,,,,Unlikely to be useful--so general!
+DRUG1,False,False,,,,
+DRUG2,False,False,,,,
+DRUG3,False,False,,,,
+DRUG4,False,False,,,,
+DRUG5,False,False,,,,
+DRUG6,False,False,,,,
+DRUG7,False,False,,,,
+DRUG8,False,False,,,,
+DRUG9,False,False,,,,
+DRUG10,False,False,,,,
+DRUG11,False,False,,,,
+DRUG12,False,False,,,,
+DRUG13,False,False,,,,
+DRUG14,False,False,,,,
+DRUG15,False,False,,,,
+DRUG16,False,False,,,,
+DRUG17,False,False,,,,
+DRUG18,False,False,,,,
+DRUG19,False,False,,,,
+DRUG20,False,False,,,,
+DRUG21,False,False,,,,
+DRUG22,False,False,,,,
+DRUG23,False,False,,,,
+DRUG24,False,False,,,,
+DRUG25,False,False,,,,
+DRUG26,False,False,,,,
+DRUG27,False,False,,,,
+DRUG28,False,False,,,,
+DRUG29,False,False,,,,
+DRUG30,False,False,,,,
+DRUG31,False,False,,,,
+DRUG32,False,False,,,,
+DRUG33,False,False,,,,
+DRUG34,False,False,,,,
+DRUG35,False,False,,,,
+DRUG36,False,False,,,,
+DRUG37,False,False,,,,
+DRUG38,False,False,,,,
+DRUG39,False,False,,,,
+DRUG40,False,False,,,,
+TOBAC30,True,True,Boolean,2,"(9,-4)",
+TOBAC100,False,False,Boolean,2,"(9,-4)",
+SMOKYRS,True,True,Numeric,,"(88,99,-4)",
+PACKSPER,True,True,Ordinal,5,"(8,9,-4)",
+QUITSMOK,False,False,Numeric,,"(888,999,-4)",Age at which quit
+ALCOCCAS,False,False,,,,Alcohol in last 3 months
+ALCFREQ,True,True,Ordinal,5,"(8,9,-4)",
+CVHATT,True,True,Nominal,3,"(9,-4)",
+HATTMULT,True,True,Boolean,2,"(8,9,-4)",Base this on last available visit? Or first?
+HATTYEAR,False,False,,,,Subtract from visit year to find how many years ago
+CVAFIB,True,True,Nominal,3,"(9,-4)",
+CVANGIO,True,True,Nominal,3,"(9,-4)",
+CVBYPASS,True,True,Nominal,3,"(9,-4)",
+CVPACDEF,True,True,Nominal,3,"(9,-4)",
+CVPACE,True,True,Nominal,3,"(9,-4)",Combine with CVPACDEF
+CVCHF,False,False,Nominal,3,"(9,-4)",
+CVANGINA,True,True,Nominal,3,"(9,-4)",
+CVHVALVE,True,True,Nominal,3,"(9,-4)",
+CVOTHR,True,True,Nominal,3,"(9,-4)",
+CVOTHRX,False,False,,,,Create dummy variables for given responses
+CBSTROKE,False,False,Nominal,3,"(9,-4)",
+STROKMUL,True,True,Boolean,2,"(8,9,-4)",Base on first or last visit?
+NACCSTYR,False,False,,,,Subtract from visit year or year of death
+CBTIA,True,True,Nominal,3,"(9,-4)",
+TIAMULT,False,False,,,,Base on first or last visit?
+NACCTIYR,False,False,,,,
+PD,False,False,Boolean,2,"(9,-4)",Not as good as PD variable from form D1
+PDYR,False,False,,,,
+PDOTHR,True,True,Boolean,2,"(9,-4)",
+PDOTHRYR,False,False,,,,
+SEIZURES,True,True,Nominal,3,"(9,-4)",
+NACCTBI,True,True,Boolean,2,"(9,-4)",
+TBI,False,False,Nominal,3,"(9,-4)",Use TBI variable from form D1
+TBIBRIEF,True,True,Nominal,3,"(9,-4)",Combine with TRAUMBRF
+TRAUMBRF,False,False,,,,
+TBIEXTEN,True,True,Nominal,3,"(9,-4)",Combine with TRAUMEXT
+TRAUMEXT,True,True,Nominal,3,"(9,-4)",
+TBIWOLOS,True,True,Nominal,3,"(9,-4)",
+TRAUMCHR,True,True,Nominal,3,"(9,-4)",
+TBIYEAR,False,False,,,,
+NCOTHR,False,False,,,,
+NCOTHRX,False,False,,,,Create dummy variables for other neurological disorders
+DIABETES,True,True,Nominal,3,"(9,-4)",Resolve with diabetes variable from D2
+DIABTYPE,True,True,Nominal,3,"(8,9,-4)",
+HYPERTEN,True,True,Nominal,3,"(9,-4)",Resolve with variable from D2
+HYPERCHO,True,True,Nominal,3,"(9,-4)",Resolve with variable from D2
+B12DEF,True,True,Nominal,3,"(9,-4)",Resolve with variable from D2
+THYROID,True,True,Nominal,3,"(9,-4)",Resolve with variable from D2
+ARTHRIT,True,True,Nominal,3,"(9,-4)",Resolve with variable from D2
+ARTHTYPE,True,True,Nominal,3,"(8,9,-4)",Resolve with variable from D2
+ARTHTYPX,False,False,,,,Dummy variables for other arthritis; resolve with variable from D2
+ARTHUPEX,False,False,,,,Resolve with variable from D2
+ARTHLOEX,False,False,,,,Resolve with variable from D2
+ARTHSPIN,False,False,,,,Resolve with variable from D2
+ARTHUNK,False,False,,,,Resolve with variable from D2
+INCONTU,True,True,Nominal,3,"(9,-4)",Resolve with variable from D2
+INCONTF,True,True,Nominal,3,"(9,-4)",Resolve with variable from D2
+APNEA,True,True,Nominal,3,"(9,-4)",Resolve with variable from D2
+RBD,True,True,Nominal,3,"(9,-4)",Resolve with variable from D2
+INSOMN,True,True,Nominal,3,"(9,-4)",Resolve with variable from D2
+OTHSLEEP,True,True,Nominal,3,"(9,-4)",Resolve with variable from D2
+OTHSLEEX,False,False,,,,Create dummy variables; resolve with variable from D2
+ALCOHOL,True,True,Nominal,3,"(9,-4)",
+ABUSOTHR,True,True,Nominal,3,"(9,-4)",
+ABUSX,False,False,,,,Create dummy variables; resolve with variable from D2
+PTSD,True,True,Nominal,3,"(9,-4)","Resolve with ""other psych disorder"" variable from D2"
+BIPOLAR,True,True,Nominal,3,"(9,-4)","Resolve with ""other psych disorder"" variable from D2"
+SCHIZ,True,True,Nominal,3,"(9,-4)","Resolve with ""other psych disorder"" variable from D2"
+DEP2YRS,True,True,Boolean,2,"(9,-4)",
+DEPOTHR,True,True,Boolean,2,"(9,-4)",
+ANXIETY,True,True,Nominal,3,"(9,-4)","Resolve with ""other psych disorder"" variable from D2"
+OCD,True,True,Nominal,3,"(9,-4)","Resolve with ""other psych disorder"" variable from D2"
+NPSYDEV,True,True,Nominal,3,"(9,-4)","Resolve with ""other psych disorder"" variable from D2"
+PSYCDIS,True,True,Nominal,3,"(9,-4)",
+PSYCDISX,False,False,,,,Create dummy variables
+HEIGHT,True,True,Numeric,,"(88.8,-4)",
+WEIGHT,False,False,Numeric,,"(888,-4)",Create derived variables over multiple visits?
+BPSYS,True,True,Numeric,,"(888,-4)",Create derived variables over multiple visits?
+BPDIAS,True,True,Numeric,,"(888,-4)",Create derived variables over multiple visits?
+HRATE,True,True,Numeric,,"(888,-4)",Create derived variables over multiple visits?
+VISION,True,True,Numeric,,"(888,-4)",
+VISCORR,False,False,,,,
+VISWCORR,False,False,,,,
+HEARING,False,False,,,,
+HEARAID,False,False,,,,
+HEARWAID,False,False,,,,
+ABRUPT,True,True,Boolean,2,(-4),
+STEPWISE,True,True,Boolean,2,(-4),
+SOMATIC,True,True,Boolean,2,(-4),
+EMOT,True,True,Boolean,2,(-4),
+HXHYPER,True,True,Boolean,2,(-4),
+HXSTROKE,True,True,Boolean,2,(-4),
+FOCLSYM,True,True,Boolean,2,(-4),
+FOCLSIGN,True,True,Boolean,2,(-4),
+HACHIN,True,True,Numeric,,(-4),
+CVDCOG,True,True,Boolean,2,"(8,-4)",
+STROKCOG,True,True,Boolean,2,"(8,-4)",
+CVDIMAG,True,True,Boolean,2,"(8,-4)",
+CVDIMAG1,False,False,,,,
+CVDIMAG2,False,False,,,,
+CVDIMAG3,False,False,,,,
+CVDIMAG4,False,False,,,,
+CVDIMAGX,False,False,,,,Detail for CVDIMAG4; convert to dummy variables
+PDNORMAL,False,False,,,,Here start UPDRS variables--evaluate redundancy with B8
+SPEECH,False,False,,,,Code for 8 (untestable)
+SPEECHX,False,False,,,,Reasons for untestable speech--look at values and decide if worth creating dummy variables
+FACEXP,False,False,,,,
+FACEXPX,False,False,,,,Reason for untestable facial expressions
+TRESTFAC,False,False,,,,
+TRESTFAX,False,False,,,,Reason why tremor is untestable
+TRESTRHD,False,False,,,,
+TRESTRHX,False,False,,,,Untestable reason
+TRESTLHD,False,False,,,,
+TRESTLHX,False,False,,,,Untestable reason
+TRESTRFT,False,False,,,,
+TRESTRFX,False,False,,,,Untestable reason
+TRESTLFT,False,False,,,,
+TRESTLFX,False,False,,,,Untestable reason
+TRACTRHD,False,False,,,,
+TRACTRHX,False,False,,,,Untestable reason
+TRACTLHD,False,False,,,,
+TRACTLHX,False,False,,,,Untestable reason
+RIGDNECK,False,False,,,,
+RIGDNEX,False,False,,,,Untestable reason
+RIGDUPRT,False,False,,,,
+RIGDUPRX,False,False,,,,Untestable reason
+RIGDUPLF,False,False,,,,
+RIGDUPLX,False,False,,,,Untestable reason
+RIGDLORT,False,False,,,,
+RIGDLORX,False,False,,,,Untestable reason
+RIGDLOLF,False,False,,,,
+RIGDLOLX,False,False,,,,Untestable reason
+TAPSRT,False,False,,,,
+TAPSRTX,False,False,,,,Untestable reason
+TAPSLF,False,False,,,,
+TAPSLFX,False,False,,,,Untestable reason
+HANDMOVR,False,False,,,,
+HANDMVRX,False,False,,,,Untestable reason
+HANDMOVL,False,False,,,,
+HANDMVLX,False,False,,,,Untestable reason
+HANDALTR,False,False,,,,
+HANDATRX,False,False,,,,Untestable reason
+HANDALTL,False,False,,,,
+HANDATLX,False,False,,,,Untestable reason
+LEGRT,False,False,,,,
+LEGRTX,False,False,,,,Untestable reason
+LEGLF,False,False,,,,
+LEGLFX,False,False,,,,Untestable reason
+ARISING,False,False,,,,
+ARISINGX,False,False,,,,Untestable reason
+POSTURE,False,False,,,,
+POSTUREX,False,False,,,,Untestable reason
+GAIT,False,False,,,,
+GAITX,False,False,,,,Untestable reason
+POSSTAB,False,False,,,,
+POSSTABX,False,False,,,,Untestable reason
+BRADYKIN,False,False,,,,
+BRADYKIX,False,False,,,,Untestable reason
+MEMORY,False,False,Ordinal,5,,CDR variables start here. 0=no impairment; 3 = severe impairment.
+ORIENT,False,False,Ordinal,5,,
+JUDGMENT,False,False,Ordinal,5,,
+COMMUN,False,False,Ordinal,5,,
+HOMEHOBB,False,False,Ordinal,5,,
+PERSCARE,False,False,Ordinal,5,,
+CDRSUM,True,True,Numeric,,,
+CDRGLOB,False,False,Ordinal,5,,
+COMPORT,True,True,Ordinal,5,(-4),
+CDRLANG,True,True,Ordinal,5,(-4),
+NPIQINF,False,False,Nominal,3,(-4),The source of the info could be significant.
+NPIQINFX,False,False,,,,Create dummy variables for other sources.
+DEL,False,False,,,,
+DELSEV,True,True,Ordinal,3,"(8,9,-4)",
+HALL,False,False,,,,
+HALLSEV,True,True,Ordinal,3,"(8,9,-4)",
+AGIT,False,False,,,,
+AGITSEV,True,True,Ordinal,3,"(8,9,-4)",
+DEPD,False,False,,,,
+DEPDSEV,True,True,Ordinal,3,"(8,9,-4)",
+ANX,False,False,,,,
+ANXSEV,True,True,Ordinal,3,"(8,9,-4)",
+ELAT,False,False,,,,
+ELATSEV,True,True,Ordinal,3,"(8,9,-4)",
+APA,False,False,,,,
+APASEV,True,True,Ordinal,3,"(8,9,-4)",
+DISN,False,False,,,,
+DISNSEV,True,True,Ordinal,3,"(8,9,-4)",
+IRR,False,False,,,,
+IRRSEV,True,True,Ordinal,3,"(8,9,-4)",
+MOT,False,False,,,,
+MOTSEV,True,True,Ordinal,3,"(8,9,-4)",
+NITE,False,False,,,,
+NITESEV,True,True,Ordinal,3,"(8,9,-4)",
+APP,False,False,,,,
+APPSEV,True,True,Ordinal,3,"(8,9,-4)",
+NOGDS,False,False,,,,Here start GDS variables.
+SATIS,False,False,,,,
+DROPACT,False,False,,,,
+EMPTY,False,False,,,,
+BORED,False,False,,,,
+SPIRITS,False,False,,,,
+AFRAID,False,False,,,,
+HAPPY,False,False,,,,
+HELPLESS,False,False,,,,
+STAYHOME,False,False,,,,
+MEMPROB,False,False,,,,
+WONDRFUL,False,False,,,,
+WRTHLESS,False,False,,,,
+ENERGY,False,False,,,,
+HOPELESS,False,False,,,,
+BETTER,False,False,,,,
+NACCGDS,True,True,Numeric,,"(-4,88)",
+BILLS,False,False,,,,Here starts the functional assessments scale--create a summary score for FAS?
+TAXES,False,False,,,,
+SHOPPING,False,False,,,,
+GAMES,False,False,,,,
+STOVE,False,False,,,,
+MEALPREP,False,False,,,,
+EVENTS,False,False,,,,
+PAYATTN,False,False,,,,
+REMDATES,False,False,,,,
+TRAVEL,False,False,,,,
+NACCNREX,True,True,Boolean,2,"(9,-4)",Here start physical/neurological exam findings
+NORMEXAM,False,False,,,,Uninformative
+FOCLDEF,True,True,Boolean,2,"(9,-4)",
+GAITDIS,True,True,Boolean,2,"(9,-4)",
+EYEMOVE,True,True,Boolean,2,"(9,-4)",
+PARKSIGN,True,True,Boolean,2,(-4),
+RESTTRL,True,True,Boolean,2,"(8,-4)",
+RESTTRR,True,True,Boolean,2,"(8,-4)",
+SLOWINGL,True,True,Boolean,2,"(8,-4)",
+SLOWINGR,True,True,Boolean,2,"(8,-4)",
+RIGIDL,True,True,Boolean,2,"(8,-4)",
+RIGIDR,True,True,Boolean,2,"(8,-4)",
+BRADY,False,False,Boolean,2,"(8,-4)",
+PARKGAIT,True,True,Boolean,2,"(8,-4)",
+POSTINST,True,True,Boolean,2,"(8,-4)",
+CVDSIGNS,True,True,Boolean,2,(-4),
+CORTDEF,True,True,Boolean,2,"(8,-4)",
+SIVDFIND,True,True,Boolean,2,"(8,-4)",
+CVDMOTL,True,True,Boolean,2,"(8,-4)",
+CVDMOTR,True,True,Boolean,2,"(8,-4)",
+CORTVISL,True,True,Boolean,2,"(8,-4)",
+CORTVISR,True,True,Boolean,2,"(8,-4)",
+SOMATL,True,True,Boolean,2,"(8,-4)",
+SOMATR,True,True,Boolean,2,"(8,-4)",
+POSTCORT,True,True,Boolean,2,(-4),
+PSPCBS,True,True,Boolean,2,(-4),
+EYEPSP,True,True,Boolean,2,"(8,-4)",
+DYSPSP,True,True,Boolean,2,"(8,-4)",
+AXIALPSP,True,True,Boolean,2,"(8,-4)",
+GAITPSP,True,True,Boolean,2,"(8,-4)",
+APRAXSP,True,True,Boolean,2,"(8,-4)",
+APRAXL,True,True,Boolean,2,"(8,-4)",
+APRAXR,True,True,Boolean,2,"(8,-4)",
+CORTSENL,True,True,Boolean,2,"(8,-4)",
+CORTSENR,True,True,Boolean,2,"(8,-4)",
+ATAXL,True,True,Boolean,2,"(8,-4)",
+ATAXR,True,True,Boolean,2,"(8,-4)",
+ALIENLML,True,True,Boolean,2,"(8,-4)",
+ALIENLMR,True,True,Boolean,2,"(8,-4)",
+DYSTONL,True,True,Boolean,2,"(8,-4)",
+DYSTONR,True,True,Boolean,2,"(8,-4)",
+MYOCLLT,True,True,Boolean,2,"(8,-4)",
+MYOCLRT,True,True,Boolean,2,"(8,-4)",
+ALSFIND,True,True,Boolean,2,(-4),
+GAITNPH,True,True,Boolean,2,(-4),
+OTHNEUR,True,True,Boolean,2,(-4),
+OTHNEURX,False,False,,,,Create dummy variables?
+B9CHG,True,True,Nominal,3,(-4),
+DECSUB,False,False,Nominal,3,(9),
+DECIN,False,False,Boolean,2,"(8,9)",
+DECCLIN,False,False,Boolean,2,(-4),
+DECCLCOG,False,False,Boolean,2,(-4),
+COGMEM,False,False,Boolean,2,(9),
+COGORI,False,False,Boolean,2,"(9,-4)",
+COGJUDG,False,False,Boolean,2,(9),
+COGLANG,False,False,Boolean,2,(9),
+COGVIS,False,False,Boolean,2,(9),
+COGATTN,False,False,Boolean,2,(9),
+COGFLUC,False,False,Boolean,2,"(9,-4)",
+COGFLAGO,False,False,Numeric,,"(888,999)",
+COGOTHR,False,False,Boolean,2,(9),
+COGOTHRX,False,False,,,,Create dummy variables
+NACCCOGF,True,True,Nominal,9,(99),
+NACCCGFX,False,False,,,,Create dummy variables
+COGMODE,True,True,Nominal,5,(99),
+COGMODEX,False,False,,,,Create dummy variables
+DECAGE,True,True,Numeric,,"(888,999)",Use as basis for calculating disease duration
+DECCLBE,False,False,Boolean,2,(-4),
+BEAPATHY,True,True,Boolean,2,(9),
+BEDEP,True,True,Boolean,2,(9),
+BEVHALL,True,True,Boolean,2,(9),
+BEVWELL,True,True,Boolean,2,"(9,-4)",
+BEVHAGO,True,True,Numeric,,"(888,-4)",
+BEAHALL,True,True,Boolean,2,(9),
+BEDEL,True,True,Boolean,2,(9),
+BEDISIN,True,True,Boolean,2,(9),
+BEIRRIT,True,True,Boolean,2,(9),
+BEAGIT,True,True,Boolean,2,(9),
+BEPERCH,True,True,Boolean,2,(9),
+BEREM,True,True,Boolean,2,"(9,-4)",
+BEREMAGO,True,True,Numeric,,"(888,-4)",Age of onset of REM sleep behavior disorder
+BEANX,True,True,Boolean,2,"(9,-4)",
+BEOTHR,True,True,Boolean,2,,
+BEOTHRX,False,False,,,,Create dummy variables
+NACCBEHF,True,True,Nominal,11,(99),
+NACCBEFX,False,False,,,,Create dummy variables
+BEMODE,True,True,Nominal,5,(99),
+BEMODEX,False,False,,,,
+BEAGE,True,True,Numeric,,"(888,9,-4)",Another time variable
+DECCLMOT,False,False,Boolean,2,(-4),
+MOGAIT,True,True,Boolean,2,(9),
+MOFALLS,True,True,Boolean,2,(9),
+MOTREM,True,True,Boolean,2,(9),
+MOSLOW,True,True,Boolean,2,(9),
+NACCMOTF,True,True,Nominal,5,(99),
+MOMODE,True,True,Nominal,5,(99),
+MOMODEX,False,False,,,,Create dummy variables
+MOMOPARK,True,True,Nominal,3,"(9,-4)",
+PARKAGE,True,True,Numeric,,"(888,999,-4)",
+MOMOALS,True,True,Numeric,,"(888,999,-4)",
+ALSAGE,True,True,Numeric,,"(888,-4)",
+MOAGE,True,True,Numeric,,"(888,-4)",
+COURSE,False,False,Nominal,6,(9),
+FRSTCHG,True,True,Nominal,4,(9),
+LBDEVAL,True,True,Boolean,2,-4,
+FTLDEVAL,True,True,Boolean,2,-4,
+MMSECOMP,False,False,,,,
+MMSELOC,False,False,,,,
+MMSELAN,True,True,Nominal,3,(-4),
+MMSELANX,False,False,,,,Create dummy variables
+MMSEVIS,False,False,,,,Unable to complete due to perceptual impairment
+MMSEHEAR,False,False,,,,Unable to complete due to perceptual impairment
+MMSEORDA,False,False,,,,
+MMSEORLO,False,False,,,,
+PENTAGON,False,False,,,,
+NACCMMSE,True,True,Numeric,,"(-4,88,95,96,97,98)","Dummy coding for (95,96,97,98)"
+NPSYCLOC,False,False,,,,
+NPSYLAN,True,True,Nominal,3,(-4),
+NPSYLANX,False,False,,,,Create dummy variables--should be redundant with MMSELANX
+LOGIMO,False,False,,,,
+LOGIDAY,False,False,,,,
+LOGIYR,False,False,,,,
+LOGIPREV,False,False,,,,
+LOGIMEM,True,True,Numeric,,"(-4,95,96,97,98)","Dummy coding for (95,96,97,98)"
+MEMUNITS,True,True,Numeric,,"(-4,95,96,97,98)",
+MEMTIME,False,False,,,,
+UDSBENTC,True,True,Numeric,,"(-4,95,96,97,98)","Dummy coding for (95,96,97,98)"
+UDSBENTD,True,True,Numeric,,"(-4,95,96,97,98)",
+UDSBENRS,True,True,Boolean,2,(-4),
+DIGIF,False,False,Numeric,,"(-4,95,96,97,98)",
+DIGIFLEN,True,True,Numeric,,"(-4,95,96,97,98)","Dummy coding for (95,96,97,98)"
+DIGIB,False,False,Numeric,,"(-4,95,96,97,98)",
+DIGIBLEN,True,True,Numeric,,"(-4,95,96,97,98)","Dummy coding for (95,96,97,98)"
+ANIMALS,True,True,Numeric,,"(-4,95,96,97,98)","Dummy coding for (95,96,97,98)"
+VEG,True,True,Numeric,,"(-4,95,96,97,98)","Dummy coding for (95,96,97,98)"
+TRAILA,True,True,Numeric,,"(-4,995,996,997,998)","Dummy coding for (995,996,997,998)"
+TRAILARR,True,True,Numeric,,"(-4,95,96,97,98)",
+TRAILALI,True,True,Numeric,,"(-4,95,96,97,98)",
+TRAILB,True,True,Numeric,,"(-4,995,996,997,998)","Dummy coding for (995,996,997,998)"
+TRAILBRR,True,True,Numeric,,"(-4,95,96,97,98)",
+TRAILBLI,True,True,Numeric,,"(-4,95,96,97,98)",
+WAIS,True,True,Numeric,,"(-4,95,96,97,98)","Dummy coding for (95,96,97,98)"
+BOSTON,True,True,Numeric,,"(-4,95,96,97,98)","Dummy coding for (95,96,97,98)"
+UDSVERFC,True,True,Numeric,,"(-4,95,96,97,98)","Dummy coding for (95,96,97,98)"
+UDSVERFN,True,True,Numeric,,"(-4,95,96,97,98)",
+UDSVERNF,True,True,Numeric,,"(-4,95,96,97,98)",
+UDSVERLC,False,False,Numeric,,"(-4,95,96,97,98)",
+UDSVERLR,False,False,Numeric,,"(-4,95,96,97,98)",
+UDSVERLN,False,False,Numeric,,"(-4,95,96,97,98)",
+UDSVERTN,False,False,Numeric,,"(-4,95,96,97,98)",
+UDSVERTE,False,False,Numeric,,"(-4,95,96,97,98)",
+UDSVERTI,False,False,Numeric,,"(-4,95,96,97,98)",
+COGSTAT,True,True,Ordinal,,"(9,-4)",
+NACCC1,False,False,,,,
+MOCACOMP,False,False,,,,
+MOCAREAS,False,False,,,,Reason MoCA not administered--convert to dummy variables
+MOCALOC,False,False,,,,
+MOCALAN,True,True,Nominal,3,(-4),
+MOCALANX,False,False,,,,Create dummy variables
+MOCAVIS,False,False,,,,
+MOCAHEAR,False,False,,,,
+MOCATOTS,True,True,Numeric,,"(-4,88)",
+MOCATRAI,False,False,,,,
+MOCACUBE,False,False,,,,
+MOCACLOC,False,False,,,,
+MOCACLON,False,False,,,,
+MOCACLOH,False,False,,,,
+MOCANAMI,False,False,,,,
+MOCAREGI,False,False,,,,
+MOCADIGI,False,False,,,,
+MOCALETT,False,False,,,,
+MOCASER7,False,False,,,,
+MOCAREPE,False,False,,,,
+MOCAFLUE,False,False,,,,
+MOCAABST,False,False,,,,
+MOCARECN,False,False,,,,
+MOCARECC,False,False,,,,
+MOCARECR,False,False,,,,
+MOCAORDT,False,False,,,,
+MOCAORMO,False,False,,,,
+MOCAORYR,False,False,,,,
+MOCAORDY,False,False,,,,
+MOCAORPL,False,False,,,,
+MOCAORCT,False,False,,,,
+NACCMOCA,False,False,,,,
+CRAFTVRS,True,True,Numeric,,"(-4,95,96,97,98)","Dummy coding for (95,96,97,98)"
+CRAFTURS,False,False,Numeric,,"(-4,95,96,97,98)",
+DIGFORCT,False,False,Numeric,,"(-4,95,96,97,98)","Dummy coding for (95,96,97,98)"
+DIGFORSL,True,True,Numeric,,"(-4,95,96,97,98)",
+DIGBACCT,False,False,Numeric,,"(-4,95,96,97,98)","Dummy coding for (95,96,97,98)"
+DIGBACLS,True,True,Numeric,,"(-4,95,96,97,98)",
+CRAFTDVR,True,True,Numeric,,"(-4,95,96,97,98)","Dummy coding for (95,96,97,98)"
+CRAFTDRE,False,False,Numeric,,"(-4,95,96,97,98)",
+CRAFTDTI,True,True,Numeric,,"(99,-4)",
+CRAFTCUE,False,False,Boolean,2,(-4),
+MINTTOTS,True,True,Numeric,,"(-4,95,96,97,98)","Dummy coding for (95,96,97,98)"
+MINTTOTW,False,False,Numeric,,"(-4,95,96,97,98)",
+MINTSCNG,False,False,Numeric,,"(-4,95,96,97,98)",
+MINTSCNC,False,False,Numeric,,"(-4,95,96,97,98)",
+MINTPCNG,False,False,Numeric,,"(-4,95,96,97,98)",
+MINTPCNC,False,False,Numeric,,"(-4,95,96,97,98)",
+NACCC2,False,False,,,,
+WHODIDDX,False,False,,,,Create dummy variables
+DXMETHOD,False,False,,,,Resolve with WHODIDDX
+NORMCOG,False,False,Boolean,2,,
+DEMENTED,False,False,Boolean,2,,
+AMNDEM,True,True,Nominal,3,(-4),
+PCA,True,True,Nominal,3,(-4),Note this requires DEMENTED=1; non-demented PCA cases have PCA=8. Recode?
+NACCPPA,True,True,Nominal,4,,Resolve with PPAPHIF (UDS 1-2) and NACCTMCI.
+NACCPPAG,True,True,Nominal,6,(-4),
+NACCPPME,True,True,Nominal,7,(-4),
+NACCBVFT,True,True,Nominal,3,,
+NACCLBDS,False,False,Boolean,2,(8),
+NAMNDEM,True,True,Nominal,3,(-4),
+NACCTMCI,False,False,Nominal,5,,
+NACCMCIL,True,True,Nominal,3,,
+NACCMCIA,True,True,Nominal,3,,
+NACCMCIE,True,True,Nominal,3,,
+NACCMCIV,True,True,Nominal,3,,
+NACCMCII,False,False,,,,
+IMPNOMCI,False,False,Boolean,2,,
+AMYLPET,True,True,Boolean,2,"(8,-4)",
+AMYLCSF,True,True,Boolean,2,"(8,-4)",
+FDGAD,True,True,Boolean,2,"(8,-4)",
+HIPPATR,True,True,Boolean,2,"(8,-4)",
+TAUPETAD,True,True,Boolean,2,"(8,-4)",
+CSFTAU,True,True,Boolean,2,"(8,-4)",
+FDGFTLD,True,True,Boolean,2,"(8,-4)",
+TPETFTLD,True,True,Boolean,2,"(8,-4)",
+MRFTLD,True,True,Boolean,2,"(8,-4)",
+DATSCAN,True,True,Boolean,2,"(8,-4)",
+OTHBIOM,False,False,,,,
+OTHBIOMX,False,False,,,,Create dummy variables
+IMAGLINF,True,True,Boolean,2,"(8,-4)",
+IMAGLAC,True,True,Boolean,2,"(8,-4)",
+IMAGMACH,True,True,Boolean,2,"(8,-4)",
+IMAGMICH,True,True,Boolean,2,"(8,-4)",
+IMAGMWMH,True,True,Boolean,2,"(8,-4)",
+IMAGEWMH,True,True,Boolean,2,"(8,-4)",
+OTHMUT,False,False,Boolean,2,"(9,-4)",
+OTHMUTX,False,False,,,,Create dummy variables
+NACCALZD,True,True,Nominal,3,,dementia syndrome(s) at a particular visit can be determined by: naccamnd; naccbvft; nacclbds; naccnamd
+NACCALZP,True,True,Nominal,5,,
+PROBAD,False,False,,,,Not collected in UDS3; resolve with NACCALZD/NACCALZP and omit.
+PROBADIF,False,False,,,,Not collected in UDS3; resolve with NACCALZD/NACCALZP and omit.
+POSSAD,False,False,,,,Not collected in UDS3; resolve with NACCALZD/NACCALZP and omit.
+POSSADIF,False,False,,,,Not collected in UDS3; resolve with NACCALZD/NACCALZP and omit.
+NACCLBDE,False,False,Nominal,3,,
+NACCLBDP,True,True,Nominal,5,,
+PARK,True,True,Boolean,2,,
+MSA,False,False,Boolean,2,(-4),
+MSAIF,True,True,Nominal,5,(-4),
+PSP,False,False,Boolean,2,,
+PSPIF,True,True,Nominal,5,,
+CORT,False,False,Boolean,2,,
+CORTIF,True,True,Nominal,5,,
+FTLDMO,False,False,Boolean,2,(-4),
+FTLDMOIF,True,True,Nominal,5,(-4),
+FTLDNOS,False,False,Boolean,2,(-4),
+FTLDNOIF,True,True,Nominal,5,(-4),
+FTD,False,False,Nominal,3,(-4),Not collected in UDS3
+FTDIF,True,True,Nominal,4,(-4),Not collected in UDS3
+PPAPH,True,True,Nominal,3,(-4),Not collected in UDS3
+PPAPHIF,True,True,Nominal,4,(-4),Not collected in UDS3
+FTLDSUBT,False,False,,,,Derived from pathology? Unclear; omit for possible circularity.
+FTLDSUBX,False,False,,,,Derived from pathology? Unclear; omit for possible circularity.
+CVD,False,False,Boolean,2,(-4),
+CVDIF,True,True,Nominal,5,(-4),
+PREVSTK,True,True,Boolean,2,(-4),Not in UDS1-2.
+STROKDEC,True,True,Nominal,3,(-4),
+STKIMAG,True,True,Nominal,3,"(9,-4)",
+INFNETW,True,True,Boolean,2,"(9,-4)",
+INFWMH,True,True,Boolean,2,"(9,-4)",
+VASC,False,False,Nominal,3,(-4),
+VASCIF,True,True,Nominal,4,(-4),
+VASCPS,False,False,Boolean,2,"(8,-4)",
+VASCPSIF,True,True,Nominal,4,(-4),
+STROKE,False,False,Boolean,2,(-4),
+STROKIF,True,True,Nominal,5,(-4),
+ESSTREM,True,True,Boolean,2,(-4),
+ESSTREIF,True,True,Nominal,5,(-4),
+DOWNS,False,False,Boolean,2,,Exclude participants based on this.
+DOWNSIF,False,False,Nominal,5,(-4),
+HUNT,False,False,Boolean,2,,Exclude participants based on this.
+HUNTIF,False,False,Nominal,5,(-4),
+PRION,False,False,Boolean,2,,Exclude participants based on this.
+PRIONIF,False,False,Nominal,5,(-4),
+BRNINJ,False,False,Boolean,2,,
+BRNINJIF,True,True,Nominal,5,(-4),Exclude if primary cause?
+BRNINCTE,True,True,Boolean,2,"(9,8,-4)",
+HYCEPH,False,False,Boolean,2,,Exclusion criterion? Or risk factor?!
+HYCEPHIF,True,True,Nominal,5,(-4),
+EPILEP,False,False,Boolean,2,(-4),Exclusion criterion? Or risk factor?!
+EPILEPIF,True,True,Nominal,5,(-4),
+NEOP,False,False,Boolean,2,(-4),Exclude participants based on this.
+NEOPIF,True,True,Nominal,5,(-4),
+NEOPSTAT,True,True,Nominal,3,(-4),
+HIV,False,False,Boolean,2,(-4),
+HIVIF,True,True,Nominal,5,(-4),Exclude if primary.
+OTHCOG,False,False,,,,
+OTHCOGIF,False,False,,,,Look at OTHCOGX and exclude if primary
+OTHCOGX,False,False,,,,Create dummy variables.
+DEP,False,False,Boolean,2,,
+DEPIF,True,True,Nominal,5,(-4),
+DEPTREAT,True,True,Nominal,3,(-4),
+BIPOLDX,False,False,,,,
+BIPOLDIF,True,True,Nominal,5,(-4),
+SCHIZOP,False,False,,,,
+SCHIZOIF,True,True,Nominal,5,(-4),
+ANXIET,False,False,,,,
+ANXIETIF,True,True,Nominal,5,(-4),
+DELIR,False,False,,,,
+DELIRIF,True,True,Nominal,5,(-4),
+PTSDDX,False,False,,,,
+PTSDDXIF,True,True,Nominal,5,(-4),
+OTHPSY,False,False,,,,
+OTHPSYIF,True,True,Nominal,5,,
+OTHPSYX,False,False,,,,Dummy variables
+ALCDEM,False,False,Nominal,3,,
+ALCDEMIF,True,True,Nominal,5,(-4),
+ALCABUSE,True,True,Nominal,3,"(9,-4)",
+IMPSUB,False,False,,,,
+IMPSUBIF,True,True,Nominal,5,(-4),
+DYSILL,False,False,,,,
+DYSILLIF,True,True,Nominal,5,(-4),
+MEDS,False,False,,,,
+MEDSIF,True,True,Nominal,5,(-4),
+DEMUN,False,False,,,,
+DEMUNIF,True,True,Nominal,5,(-4),
+COGOTH,False,False,,,,
+COGOTHIF,False,False,,,,
+COGOTHX,False,False,,,,
+COGOTH2,False,False,,,,
+COGOTH2F,False,False,,,,
+COGOTH2X,False,False,,,,
+COGOTH3,False,False,,,,
+COGOTH3F,False,False,,,,
+COGOTH3X,False,False,,,,
+NACCETPR,False,False,,,,Yay! dummy variables.
+NACCADMU,True,True,Boolean,2,,Note that this includes mutations discovered at autopsy. 
+NACCFTDM,True,True,Boolean,2,,Redundant with B2 variable?
+CANCER,True,True,Nominal,3,"(8,-4)",
+CANCSITE,False,False,,,,
+DIABET,True,True,Nominal,4,"(9,-4)",Redundant with B2 variable?
+MYOINF,True,True,Boolean,2,"(8,-4)",Redundant with B2 variable?
+CONGHRT,True,True,Boolean,2,"(8,-4)",Redundant with B2 variable?
+AFIBRILL,True,True,Boolean,2,"(8,-4)",Redundant with B2 variable?
+HYPERT,True,True,Boolean,2,"(8,-4)",Redundant with B2 variable?
+ANGINA,True,True,Boolean,2,"(8,-4)",Redundant with B2 variable?
+HYPCHOL,True,True,Boolean,2,"(8,-4)",Redundant with B2 variable?
+VB12DEF,True,True,Boolean,2,"(8,-4)",Redundant with B2 variable?
+THYDIS,True,True,Boolean,2,"(8,-4)",Redundant with B2 variable?
+ARTH,True,True,Boolean,2,"(8,-4)",Redundant with B2 variable?
+ARTYPE,True,True,Nominal,3,"(8,9,-4)",Redundant with B2 variable?
+ARTYPEX,False,False,,,,Dummy variables
+ARTUPEX,False,False,,,,Redundant with B2 variable?
+ARTLOEX,False,False,,,,Redundant with B2 variable?
+ARTSPIN,False,False,,,,Redundant with B2 variable?
+ARTUNKN,False,False,,,,Redundant with B2 variable?
+URINEINC,True,True,Boolean,2,"(8,-4)",Redundant with B2 variable?
+BOWLINC,True,True,Boolean,2,"(8,-4)",Redundant with B2 variable?
+SLEEPAP,True,True,Boolean,2,"(8,-4)",Redundant with B2 variable?
+REMDIS,False,False,Boolean,2,"(8,-4)",Redundant with B2 variable?
+HYPOSOM,True,True,Boolean,2,"(8,-4)",
+SLEEPOTH,True,True,Boolean,2,"(8,-4)",
+SLEEPOTX,False,False,,,,Dummy variables
+ANGIOCP,True,True,Boolean,2,"(8,-4)",
+ANGIOPCI,True,True,Boolean,2,"(8,-4)",
+PACEMAKE,True,True,Boolean,2,"(8,-4)",Redundant with B2 variable?
+HVALVE,True,True,Boolean,2,"(8,-4)",Redundant with B2 variable?
+ANTIENC,True,True,Boolean,2,"(8,-4)",
+ANTIENCX,False,False,,,,Worth checking out to see how diverse the encephalopathies are.
+OTHCOND,False,False,,,,
+OTHCONDX,False,False,,,,Dummy variables
+NACCAGEB,False,False,,,,Baseline visit age--handy for calculating disease duration/time intervals.
+NACCNIHR,False,False,,,,Simplified race variable--only at baseline? Convert to dummy variables.
+NACCNORM,False,False,Boolean,2,,Normal cog at ALL UDS visits (all to date?)
+NACCIDEM,False,False,,,,
+NACCAGE,True,True,,,,
+NACCAAAS,True,True,Boolean,2,(-4),
+NACCAANX,True,True,Boolean,2,(-4),
+NACCAC,True,True,Boolean,2,(-4),
+NACCACEI,True,True,Boolean,2,(-4),
+NACCADEP,True,True,Boolean,2,(-4),
+NACCADMD,True,True,Boolean,2,(-4),A pretty good guarantee that *some* clinician thinks this person has AD!
+NACCAHTN,True,True,Boolean,2,(-4),
+NACCAMD,True,True,Boolean,2,(-4),
+NACCANGI,True,True,Boolean,2,(-4),
+NACCAPSY,True,True,Boolean,2,(-4),
+NACCBETA,True,True,Boolean,2,(-4),
+NACCCCBS,True,True,Boolean,2,(-4),
+NACCDBMD,True,True,Boolean,2,(-4),
+NACCDIUR,True,True,Boolean,2,(-4),
+NACCEMD,True,True,Boolean,2,(-4),
+NACCEPMD,True,True,Boolean,2,(-4),
+NACCHTNC,True,True,Boolean,2,(-4),
+NACCLIPL,True,True,Boolean,2,(-4),
+NACCNSD,True,True,Boolean,2,(-4),
+NACCPDMD,True,True,Boolean,2,(-4),
+NACCVASD,True,True,Boolean,2,(-4),
+NACCBMI,True,True,Numeric,,"(888.8,-4)",
+NACCUDSD,True,True,Nominal,4,,Derived; determines whether subject was cognitively impaired/MCI/demented
+NACCDIED,False,False,,,,
+NACCMOD,False,False,,,,Use to code age at death and other time intervals.
+NACCYOD,False,False,,,,Use to code age at death and other time intervals.
+NACCAUTP,False,False,,,,Use this to identify autopsy cases!
+NACCACTV,False,False,,,,
+NACCNOVS,False,False,,,,
+NACCDSMO,False,False,,,,
+NACCDSDY,False,False,,,,
+NACCDSYR,False,False,,,,
+NACCNURP,True,True,Boolean,2,,
+NACCNRMO,False,False,,,,Use to calculate age at nursing home entrance.
+NACCNRDY,False,False,,,,Use to calculate age at nursing home entrance.
+NACCNRYR,False,False,,,,Use to calculate age at nursing home entrance.
+NACCFTD,False,False,,,,FTLD module available. Informative as indicator about cog profile; could also request FTLD module data.
+NACCMDSS,False,False,,,,
+NACCPAFF,False,False,,,,
+NACCLBDM,False,False,,,,LBD module available. Informative as indicator about cog profile; could also request LBD module data.
+NACCACSF,False,False,,,,
+NACCPCSF,False,False,,,,
+NACCTCSF,False,False,,,,
+NACCMRSA,False,False,,,,
+NACCNMRI,False,False,,,,
+NACCAPSA,False,False,,,,
+NACCNAPA,False,False,,,,
+ADSPWES,False,False,,,,
+NACCDBGP,False,False,,,,Exome sequencing data available from dbGaP
+NACCNE4S,True,True,Ordinal,3,(9),
+ADSPSEQ,False,False,,,,
+ADGCRND,False,False,,,,
+ADSPWGS,False,False,,,,
+ADGCGWAS,False,False,,,,
+NACCNGDS,False,False,,,,Genotype data available from NIAGADS
+NACCNCRD,False,False,,,,
+NACCAPOE,False,False,,,,Dummy variables!
+NPFORMVER,False,False,,,,
+NPPDXP,False,False,,,,AD-related genes--include as predictor
+NPPDXQ,False,False,,,,FTLD-related genes--include as predictor
+NACCDAGE,True,True,Numeric,,"(888,999)",Include in predictors
+NPTAUHAP,True,True,Nominal,4,(9),Include as predictor if present.
+NPPRNP,True,True,Nominal,3,(9),Risk factor for CJD
+NPSEX,False,False,,,,
